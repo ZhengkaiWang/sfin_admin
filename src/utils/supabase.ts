@@ -9,6 +9,9 @@ export const createSupabaseClient = () => {
   return createClient(supabaseUrl, supabaseAnonKey);
 };
 
+// 导出一个supabase客户端实例，用于客户端组件
+export const supabase = createSupabaseClient();
+
 // 验证邀请码
 export const validateInviteCode = async (code: string) => {
   const supabase = createSupabaseClient();

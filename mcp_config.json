@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "sfin": {
+      "command": "curl",
+      "args": [
+        "-N",
+        "--header",
+        "Authorization: Bearer YOUR_TOKEN_HERE",
+        "https://your-railway-app-url.up.railway.app/sse"
+      ]
+    }
+  }
+}
